@@ -1,0 +1,6 @@
+.header{
+    margin-bottom: 40px;
+    &__container{
+        @include wrapper();
+    }
+}

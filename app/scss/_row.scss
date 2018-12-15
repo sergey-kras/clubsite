@@ -1,0 +1,30 @@
+.row {
+    position: relative;
+    &__content {
+        padding: 100px 0;
+        @include wrapper();
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    &__full {
+        width: 100%;
+        @include col();
+    }
+    &__1-2 {
+        @include size(6);
+        @include col();
+    }
+    &__1-4 {
+        @include size(3);
+        @include col();
+    }
+    &__title{
+        margin-bottom: 60px;
+    }
+    &__text{
+        margin: 30px 0;
+        margin-top: 60px;
+    }
+}

@@ -1,0 +1,15 @@
+.iconText{
+    display: flex;
+    align-items: center;
+    font-size: .666rem;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    &__icon{
+        max-width: 30px;
+        margin-right: 20px;
+    }
+    &__text{
+
+    }
+}

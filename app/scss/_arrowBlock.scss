@@ -1,0 +1,31 @@
+.arrowBlock {
+    background-color: #d61d44;
+    width: 230px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    &__toLeft,
+    &__toRight {
+        width: 50px;
+        display: flex;
+        align-items: center;
+        background: none;
+        border: none;
+        outline: none;
+    }
+    &__toRight {
+        transform: rotate(-180deg);
+    }
+    &__count {
+        font-size: .666rem;
+        font-weight: 600;
+    }
+    &__toRight {
+        margin-right: 20px;
+    }
+    &__toLeft {
+        margin-left: 20px;
+    }
+}

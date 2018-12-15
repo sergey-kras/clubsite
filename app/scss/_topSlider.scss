@@ -1,0 +1,64 @@
+.topSlider {
+    position: relative;
+    &._LayerOverlay {
+        margin-top: -183px;
+    }
+    &__item {
+        height: 70vh;
+        min-height: 760px;
+        max-height: 1200px;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+    }
+    &__overley {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #000;
+        opacity: .78;
+        width: 100%;
+        height: 100%;
+    }
+    &__container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    &__title {
+        font-size: 1.6rem;
+        color: #fff;
+        text-align: center;
+    }
+    &__descrioption {
+        margin-top: 0;
+        color: #fff;
+        font-size: .625rem;
+        line-height: 1rem;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    &__buttons {
+        @include wrapper();
+        display: flex;
+    }
+    &__button:first-child {
+        margin-right: 80px;
+    }
+    &__arrows {
+        position: absolute;
+        z-index: 2;
+        right: 50%;
+        transform: translate(50%, 0%);
+        @include wrapper();
+        width: 100%;
+        bottom: 0px;
+        display: flex;
+        justify-content: flex-end;
+    }
+}

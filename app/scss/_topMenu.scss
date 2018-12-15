@@ -1,0 +1,47 @@
+.topMenu{
+    position: relative;
+    z-index: 2;
+    color: #51545f;
+    &._LayerOverlay{
+        color: #fff;
+    }
+    &__info{
+        @include row-flex();
+        justify-content: space-between;
+        margin: 40px 0;
+        font-size: .625rem;
+        line-height: .75rem;
+        align-items: center;
+    }
+    &__left, &__right{
+        @include col();
+        display: flex;
+    }
+    &__left{
+        @include size(2);
+    }
+    &__right{
+        @include size(10);
+        justify-content: flex-end;
+    }
+    &__contact{
+        @include size(4);
+        text-align: right;
+    }
+    &__nav{
+        @include row-flex();
+        margin: 0;
+        justify-content: space-between;
+        list-style-type: none;
+        padding: 0;
+    }
+    &__item{
+        @include col();
+        display: inline-block;
+        font-weight: 600;
+        font-size: .7rem;
+    }
+    &__link{
+        color: inherit;
+    }
+}
