@@ -1,0 +1,20 @@
+.trainer {
+    margin-bottom: 50px;
+    &__image {
+        position: relative;
+        padding-top: 100%;
+        background-size: cover;
+    }
+    &__info {
+        padding: 50px 60px;
+    }
+    &__job {
+        color: #818295;
+        font-size: .625rem;
+        margin-bottom: .8rem;
+    }
+    &__name {
+        color: #51545f;
+        font-size: 1.083rem;
+    }
+}
