@@ -17,4 +17,14 @@
         color: #51545f;
         font-size: 1.083rem;
     }
+    &._theme_trining {
+        .trainer__image {
+            padding-top: 75%;
+        }
+    }
+    &__postText{
+        font-size: .625rem;
+        color: #51545f;
+        margin-top: .8rem;
+    }
 }

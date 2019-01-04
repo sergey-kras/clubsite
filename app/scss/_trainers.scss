@@ -6,5 +6,11 @@
     padding-top: 50px;
     &__item {
         width: 25%;
+        &._theme_trining {
+            background-color: #f5f5f5;
+            &:nth-child(2n){
+                background-color: #eae3f1;
+            }
+        }
     }
 }

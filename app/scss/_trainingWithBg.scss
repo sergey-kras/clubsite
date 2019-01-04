@@ -1,0 +1,28 @@
+.trainingWithBg {
+    padding-top: 75%; 
+    position: relative;
+    &__overley{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: .6;
+    }
+    &__info {
+        color: #fff;
+        position: absolute;
+        top: 80px;
+        left: 80px;
+    }
+    &__topText {
+        font-size: 1.083rem;
+        font-weight: 100;
+        margin-bottom: 7.5px;
+    }
+    &__name {
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+}

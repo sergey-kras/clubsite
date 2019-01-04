@@ -10,6 +10,9 @@
         background-color: #f5f5f5;
         padding: 3.75rem 2.083rem;
         box-sizing: border-box;
+        &._theme_trining{
+            padding: 30px;
+        }
     }
     &__link {
         color: #5f498a;
