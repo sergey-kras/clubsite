@@ -1,0 +1,38 @@
+.successStory {
+    display: flex;
+    &__images {
+        width: calc((100% / 3) * 2);
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__info {
+        width: calc(100% / 3);
+        padding: 55px 40px;
+        color: #51545f;
+        box-sizing: border-box;
+    }
+    &__resultImage {
+        width: 50%;
+        height: 500px;
+        background-size: cover;
+    }
+    &__bottom {
+        width: 100%;
+        padding: 40px 10px;
+        display: flex;
+        justify-content: space-around;
+        color: #999baf;
+    }
+    &__title {
+        margin: 0;
+        font-size: 1.083rem;
+    }
+    &__text{
+        font-size: .625rem;
+        line-height: 1rem;
+        margin-bottom: 30px;
+    }
+    &__resultInfo{
+        font-size: .583rem;
+    }
+}

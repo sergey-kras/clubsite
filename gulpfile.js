@@ -14,7 +14,7 @@ gulp.task('smartgrid', function () {
     var settings = {
         outputStyle: 'scss', /* less || scss || sass || styl */
         columns: 12, /* number of grid columns */
-        offset: '20px', /* gutter width px || % */
+        offset: '30px', /* gutter width px || % */
         mobileFirst: false, /* mobileFirst ? 'min-width' : 'max-width' */
         container: {
             maxWidth: '1405px', /* max-width оn very large screen */

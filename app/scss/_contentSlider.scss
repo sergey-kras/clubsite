@@ -1,4 +1,5 @@
-.contentSlider{
+.contentSlider {
+    position: relative;
     &__overley {
         position: absolute;
         top: 0;
@@ -12,14 +13,16 @@
         position: absolute;
         z-index: 2;
         right: 50%;
-        transform: translate(50%, 0%);
+        transform: translate(50%, -50%);
         @include wrapper();
+        padding: 0;
         width: 100%;
         bottom: 0px;
         display: flex;
-        justify-content: flex-end; 
+        justify-content: flex-end;
     }
-    &__item{
+    &__item {
+        padding: 100px 0;
         background-size: cover;
         background-position: center center;
         position: relative;

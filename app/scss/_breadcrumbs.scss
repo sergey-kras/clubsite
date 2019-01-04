@@ -1,0 +1,27 @@
+.breadcrumbs {
+    &__item {
+        color: #51545f;
+        text-decoration: none;
+        font-size: .541rem;
+        margin-left: 28px;
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            left: -16px;
+            top: 4px;
+            width: 4px;
+            height: 4px;
+            border-radius: 100%;
+            background-color: #e5264e;
+        }
+        &:first-child{
+            &:after{
+                display: none;
+            }
+        }
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}

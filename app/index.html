@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>WebDev</title>
+    <title>mainPage</title>
     <meta name='description' content=''>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
@@ -103,7 +103,7 @@
                                 <div class="iconText__icon">
                                     <img src="./img/findLocation.svg" alt="">
                                 </div>
-                                <div class="iconText__text">
+                                <div class="iconText__text _onColorfulBackground">
                                     Как нас найти
                                 </div>
                             </a>
@@ -113,7 +113,7 @@
                                 <div class="iconText__icon">
                                     <img src="./img/calendar.svg" alt="">
                                 </div>
-                                <div class="iconText__text">
+                                <div class="iconText__text _onColorfulBackground">
                                     Расписание
                                 </div>
                             </a>
@@ -169,12 +169,12 @@
                 <div class="row__content">
                     <div class="row__1-4">
                         <div class="row__title">
-                            <div class="title __white">
+                            <div class="title _onColorfulBackground">
                                 Жизнь для души
                             </div>
                         </div>
                         <div class="row__text">
-                            <div class="text __white">
+                            <div class="text _onColorfulBackground">
                                 Каждый день, каждый час есть возможность порадоваться, приобрести навыки, развиться, познакомиться с интереснейшими людьми
                                 — следите за нашим расписанием.
                             </div>
@@ -184,7 +184,7 @@
                                 <div class="iconText__icon">
                                     <img src="../img/pinkArrow.svg" alt="">
                                 </div>
-                                <div class="iconText__text">
+                                <div class="iconText__text _onColorfulBackground">
                                     Читать дальше
                                 </div>
                             </a>
@@ -311,36 +311,129 @@
             </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row _accent">
         <div class="row__content">
             <form class="mainForm">
                 <div class="mainForm__title">
-                    Записаться на бесплатный
-                    <br> пробный урок
+                    <div class="title _onColorfulBackground">
+                        Записаться на бесплатный
+                        <br> пробный урок
+                    </div>
                 </div>
-                <div class="mainForm__subTitle">
+                <div class="mainForm__subTitle _onColorfulBackground">
                     Мы перезвоним вам, ответим на все вопросы и запишем на первую бесплатную тренировку
                 </div>
                 <div class="mainForm__row">
                     <div class="mainForm__input">
-                        <input type="text" class="input">
+                        <input type="text" class="input _onColorfulBackground" placeholder="Имя">
                     </div>
                     <div class="mainForm__input">
-                        <input type="text" class="input">
+                        <input type="text" class="input _onColorfulBackground" placeholder="Телефон">
                     </div>
                     <div class="mainForm__input">
-                        <input type="text" class="input">
+                        <input type="text" class="input _onColorfulBackground" placeholder="E-mail">
                     </div>
                 </div>
                 <div class="mainForm__row">
-                    <div class="mainForm__input">
-                        <textarea class="textarea" name="" id="" cols="30" rows="10"></textarea>
+                    <div class="mainForm__textarea">
+                        <textarea class="textarea _onColorfulBackground" name="" id="" placeholder="Сообщение"></textarea>
                     </div>
                 </div>
                 <div class="mainForm__row">
-                    <input type="submit" class="button" value="Отправить">
+                    <div class="mainForm__button">
+                        <input type="submit" class="button _onColorfulBackground" value="Отправить">
+                    </div>
                 </div>
             </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer__content">
+            <div class="footer__navigation">
+                <div class="footer__1-4">
+                    <ul class="footer__colMenu">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">
+                                О клубе
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">
+                                Расписание
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__1-4">
+                    <ul class="footer__colMenu">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">
+                                Тренеры
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">
+                                Корпоративным клиентам
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__1-4">
+                    <ul class="footer__colMenu">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">
+                                Программы занятий
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">
+                                Клубные карты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__1-4">
+                    <ul class="footer__colMenu">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">
+                                Истории успеха
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__info">
+                <p class="footer__tel">
+                    Телефон рецепции: +7 (800) 555-35-35
+                    <br> Телефон отдела продаж: +7 (800) 555-35-35
+                </p>
+                <div class="footer__social">
+                    <a href="#" class="footer__socialItem _vk" style="background-image: url('./img/vk.svg')"></a>
+                    <a href="#" class="footer__socialItem _inst" style="background-image: url('./img/inst.svg')"></a>
+                    <a href="#" class="footer__socialItem _yout" style="background-image: url('./img/yout.svg')"></a>
+                    <a href="#" class="footer__socialItem _fb" style="background-image: url('./img/faceb.svg')"></a>
+                </div>
+                <div class="footer__iconText">
+                    <a href="#" class="iconText">
+                        <div class="iconText__icon">
+                            <img src="./img/findLocation.svg" alt="">
+                        </div>
+                        <div class="iconText__text ">
+                            Как нас найти
+                        </div>
+                    </a>
+                </div>
+                <div class="footer__iconText">
+                    <a href="#" class="iconText">
+                        <div class="iconText__icon">
+                            <img src="./img/findLocation.svg" alt="">
+                        </div>
+                        <div class="iconText__text">
+                            На главную
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
     <link rel="stylesheet" href="css/main.css">

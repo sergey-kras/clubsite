@@ -1,0 +1,91 @@
+.footer {
+    width: 100%;
+    position: relative;
+    &:after{
+        position: absolute;
+        content: '';
+        background-color: #c8c9d4;
+        width: 30%;
+        left: 50%;
+        top: 0;
+        height: 1px;
+        transform: translate(-50%, 0);
+    }
+    &__navigation {
+        @include row-flex();
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    &__1-4 {
+        @include size(3);
+        @include col();
+        &:last-child {
+            text-align: right;
+            @include size(2);
+        }
+        &:first-child {
+            @include size(4);
+        }
+    }
+    &__content {
+        padding: 50px 0;
+        @include wrapper();
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    &__colMenu {
+        padding: 0;
+        list-style-type: none;
+    }
+    &__link {
+        color: #51545f;
+        font-size: .625rem;
+        font-weight: 700;
+    }
+    &__socialItem {
+        width: 17px;
+        height: 17px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        &._vk {
+            width: 23px;
+            height: 14px;
+        }
+        &._inst {
+            width: 17px;
+            height: 17px;
+        }
+        &._yout {
+            width: 21px;
+            height: 17px;
+        }
+        &._fb {
+            width: 10px;
+            height: 17px;
+        }
+    }
+    &__info {
+        @include row-flex();
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    &__social {
+        display: flex;
+        align-items: center;
+        @include col();
+        @include size(1.5);
+        justify-content: space-between;
+    }
+    &__iconText {
+        @include col();
+    }
+    &__tel {
+        @include col();
+        color: rgb(129, 130, 149);
+        font-size: .583rem;
+    }
+}

@@ -12,6 +12,9 @@ html{
 }
 body{
   font-family: "Comfortaa";
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 img{
   max-width: 100%;

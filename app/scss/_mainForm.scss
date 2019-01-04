@@ -1,3 +1,35 @@
-.mainForm{
-    
+.mainForm {
+    width: 100%;
+    &__subTitle {
+        font-size: .75rem;
+        &._onColorfulBackground {
+            color: #a7a0ba;
+        }
+    }
+    &__title {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    &__subTitle {
+        text-align: center;
+        margin-bottom: 90px;
+    }
+    &__row {
+        @include row-flex();
+        justify-content: center;
+    }
+    &__input {
+        @include col();
+        @include size(4);
+    }
+    &__textarea {
+        @include col();
+        margin-top: 50px;
+        width: 100%;
+    }
+    &__button {
+        @include col();
+        margin-top: 70px;
+        text-align: center;
+    }
 }

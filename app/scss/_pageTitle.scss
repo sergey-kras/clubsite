@@ -1,0 +1,21 @@
+.pageTitle {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    &__text {
+        font-size: 1.5rem;
+        color: #574582;
+    }
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__icon {
+        width: 34px;
+        height: 34px;
+        margin-right: 25px;
+        margin-top: -5px;
+    }
+}

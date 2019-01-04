@@ -17,3 +17,36 @@ $(document).ready(function () {
         navClass: ["arrowBlock__toLeft", "arrowBlock__toRight"]
     });
 });
+
+$(document).ready(function () {
+    $(".chSlider1").owlCarousel({
+        items: 4,
+        dots: false,
+        loop: true,
+        navContainer: '#customNav3',
+        navText: ['<img src="./img/whiteArrow.svg" alt="">', '<img src="./img/whiteArrow.svg" alt="">'],
+        navClass: ["arrowBlock__toLeft", "arrowBlock__toRight"]
+    });
+});
+
+$(document).ready(function () {
+    $(".chSlider2").owlCarousel({
+        items: 4,
+        dots: false, 
+        loop: true,
+        navContainer: '#customNav4',
+        navText: ['<img src="./img/whiteArrow.svg" alt="">', '<img src="./img/whiteArrow.svg" alt="">'],
+        navClass: ["arrowBlock__toLeft", "arrowBlock__toRight"]
+    });
+});
+
+$(document).ready(function () {
+    $(".chSlider3").owlCarousel({
+        items: 4,
+        dots: false, 
+        loop: true,
+        navContainer: '#customNav5',
+        navText: ['<img src="./img/whiteArrow.svg" alt="">', '<img src="./img/whiteArrow.svg" alt="">'],
+        navClass: ["arrowBlock__toLeft", "arrowBlock__toRight"]
+    });
+});

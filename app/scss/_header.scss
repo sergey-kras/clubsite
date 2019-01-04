@@ -3,4 +3,7 @@
     &__container{
         @include wrapper();
     }
+    &._onDarkBg{
+        margin: 0;
+    }
 }

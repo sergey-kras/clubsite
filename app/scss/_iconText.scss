@@ -1,15 +1,51 @@
-.iconText{
+.iconText {
     display: flex;
     align-items: center;
-    font-size: .666rem;
-    font-weight: 600;
-    color: #fff;
     text-decoration: none;
-    &__icon{
-        max-width: 30px;
+    &__icon {
+        width: 30px;
         margin-right: 20px;
     }
-    &__text{
-
+    &__text {
+        font-size: .666rem;
+        font-weight: 600;
+        color: #51545f;
+        text-decoration: none;
+        &._onColorfulBackground {
+            color: #fff;
+        }
+    }
+    &._small {
+        .iconText__text {
+            font-size: .583rem;
+            line-height: 1rem;
+        }
+        .iconText__icon {
+            width: 19px;
+        }
+    }
+    &._theme_seasonTickets {
+        .iconText__text {
+            color: #51545f;
+            font-size: 1.083rem;
+        }
+        .iconText__icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 100%;
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+    &._theme_successStory{
+        .iconText__icon {
+            width: 17px;
+            margin-right: 5px;
+        }
+        .iconText__text {
+            font-size: .583rem;
+            color: #999baf;
+        }
     }
 }

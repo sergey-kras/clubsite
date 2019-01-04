@@ -1,0 +1,22 @@
+.simpleBigImage {
+    height: 70vh;
+    min-height: 760px;
+    max-height: 1200px;
+    background-size: cover;
+    &._LayerOverlay {
+        margin-top: -193px;
+        .simpleBigImage__overley {
+            height: calc(100% + 173px);
+            top: -173px;
+        }
+    }
+    &__overley {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #000;
+        opacity: .78;
+        width: 100%;
+        height: 100%;
+    }
+}

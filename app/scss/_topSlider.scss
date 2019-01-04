@@ -1,7 +1,7 @@
 .topSlider {
     position: relative;
     &._LayerOverlay {
-        margin-top: -183px;
+        margin-top: -193px;
     }
     &__item {
         height: 70vh;
@@ -54,11 +54,12 @@
         position: absolute;
         z-index: 2;
         right: 50%;
-        transform: translate(50%, 0%);
+        transform: translate(50%, -50%);
         @include wrapper();
         width: 100%;
         bottom: 0px;
         display: flex;
         justify-content: flex-end;
+        padding: 0;
     }
 }

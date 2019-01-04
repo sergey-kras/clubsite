@@ -1,0 +1,15 @@
+.input {
+    background: none;
+    border: none;
+    font-size: .583rem;
+    outline: none;
+    padding-bottom: 5px;
+    width: 100%;
+    &._onColorfulBackground{
+        border-bottom: 1px solid #aba2c1;
+        color: #fff;
+        &::-webkit-input-placeholder {
+            color: #fff;
+        }
+    }
+}

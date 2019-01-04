@@ -1,0 +1,20 @@
+.button{
+    font-size: .666rem;
+    padding: 1rem 3.5rem;
+    background: none;
+    border-radius: 100px;
+    cursor: pointer;
+    display: inline-block;
+    &._onColorfulBackground {
+        color: #fff;
+        border: 3px solid #fff;
+        font-size: .666rem;
+    }
+    &._default{
+        color: #574582;
+        border: 3px solid #574582;
+    }
+    &._small{
+        padding: .3rem 1rem;
+    }
+}

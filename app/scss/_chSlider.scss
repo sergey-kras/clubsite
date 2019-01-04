@@ -1,0 +1,14 @@
+.chSlider {
+    position: relative;
+    &__item{
+        padding-top: 80%;
+        background-size: cover;
+    }
+    &__arrows{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: 2;
+    }
+} 
