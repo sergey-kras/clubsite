@@ -2,6 +2,9 @@
     position: relative;
     padding: 50px 0;
     flex-grow: 1;
+    &._forForm {
+        padding: 100px 0;
+    }
     &__content {
         @include wrapper();
         display: flex;
@@ -19,6 +22,10 @@
     }
     &__1-2 {
         @include size(6);
+        @include col();
+    }
+    &__1-3 {
+        @include size(4);
         @include col();
     }
     &__1-4 {

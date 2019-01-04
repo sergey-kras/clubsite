@@ -1,8 +1,15 @@
-.text{
+.text {
     color: #51545f;
     font-size: .625rem;
     line-height: 1rem;
-    &._onColorfulBackground{
+    &._onColorfulBackground {
         color: #fff;
+    }
+    &._accent {
+        background-color: #5f498a;
+        color: #fff;
+        font-size: .75rem;
+        padding: 2.83rem 3.9583rem;
+        margin: 0;
     }
 }

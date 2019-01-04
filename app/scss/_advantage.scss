@@ -1,19 +1,27 @@
-.advantage{
+.advantage {
     color: #51545f;
-    &__icon{
+    &__icon {
         width: 80px;
         height: 66px;
     }
-    &__title{
+    &__title {
         font-size: 1.08rem;
         font-weight: 600;
         color: inherit;
         margin-top: 1.6rem;
     }
-    &__text{
+    &__text {
         color: inherit;
         font-size: .625rem;
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
         margin-top: .8rem;
+    }
+    &._big {
+        .advantage__text {
+            margin-top: 1rem;
+            font-size: .75rem;
+            margin-bottom: 2rem;
+            line-height: 1rem; 
+        }
     }
 }
