@@ -1,0 +1,28 @@
+.pageTrainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__image {
+        @include size(5.85);
+        img {
+            width: 100%;
+        }
+    }
+    &__info {
+        @include size(5.85);
+    }
+    &__job {
+        color: #51545f;
+        font-size: .625rem;
+    }
+    &__title {
+        margin: 20px 0;
+    }
+    &__description {
+        font-size: .625rem;
+        color: #51545f;
+        line-height: 1rem;
+        margin-top: 0;
+        margin-bottom: 100px;
+    }
+}
