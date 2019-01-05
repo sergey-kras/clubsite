@@ -38,7 +38,7 @@
             background-repeat: no-repeat;
         }
     }
-    &._theme_successStory{
+    &._theme_successStory {
         .iconText__icon {
             width: 17px;
             margin-right: 5px;
@@ -46,6 +46,38 @@
         .iconText__text {
             font-size: .583rem;
             color: #999baf;
+        }
+    }
+    &._link._onDarkBg {
+        .iconText__text {
+            &:after {
+                background-color: #fff;
+            }
+        }
+    }
+    &._link {
+        .iconText__text {
+            position: relative;
+            transition: .6s;
+            &:after {
+                content: '';
+                width: 0;
+                transition: .6s;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 1px;
+                background-color: #51545f;
+            }
+            &:hover {
+                margin-top: -3px;
+                padding-bottom: 3px;
+                transition: .6s;
+                &:after {
+                    width: 100%;
+                    transition: .6s;
+                }
+            }
         }
     }
 }

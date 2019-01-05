@@ -14,6 +14,8 @@
         background: none;
         border: none;
         outline: none;
+        transition: .3s;
+        cursor: pointer;
     }
     &__toRight {
         transform: rotate(-180deg);
@@ -24,8 +26,18 @@
     }
     &__toRight {
         margin-right: 20px;
+        &:hover{
+            margin-right: 16px;
+            margin-left: 4px;
+            transition: .3s;
+        }
     }
     &__toLeft {
         margin-left: 20px;
+        &:hover{
+            margin-left: 16px;
+            margin-right: 4px;
+            transition: .3s;
+        }
     }
 }
