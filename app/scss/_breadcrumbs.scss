@@ -20,8 +20,22 @@
                 display: none;
             }
         }
-        &:hover{
-            text-decoration: underline;
+        &:before {
+            content: '';
+            width: 0;
+            transition: .6s;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 1px;
+            background-color: #51545f;
+        }
+        &:hover {
+            transition: .6s;
+            // color: #e5264e;
+            &:before {
+                width: 100%;
+            }
         }
     }
 }

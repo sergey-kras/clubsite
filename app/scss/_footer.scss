@@ -71,6 +71,7 @@
         background-repeat: no-repeat;
         background-position: center center;
         background-size: contain;
+        transition: .3s;
         &._vk {
             width: 23px;
             height: 14px;
@@ -86,6 +87,10 @@
         &._fb {
             width: 10px;
             height: 17px;
+        }
+        &:hover {
+            margin-top: -3px;
+            margin-bottom: 3px;
         }
     }
     &__info {

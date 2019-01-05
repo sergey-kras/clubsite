@@ -1,5 +1,6 @@
 .successStory {
     display: flex;
+    transition: .5s;
     &__images {
         width: calc((100% / 3) * 2);
         display: flex;
@@ -34,5 +35,9 @@
     }
     &__resultInfo{
         font-size: .583rem;
+    }
+    &:hover{
+        margin-top: -15px;
+        padding-bottom: 15px;
     }
 }

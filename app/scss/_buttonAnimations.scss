@@ -42,4 +42,12 @@
             background: #574582;
         }
     }
+    &._small {
+        -webkit-transition: 1s ease-out;
+        transition: 1s ease-out;
+        &:before {
+            -webkit-transition: .5s;
+            transition: .5s;
+        }
+    }
 }
