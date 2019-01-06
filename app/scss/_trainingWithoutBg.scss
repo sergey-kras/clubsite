@@ -2,6 +2,8 @@
     width: 100%;
     position: relative;
     padding-top: 75%;
+    display: block;
+    text-decoration: none;
     &._rectangle {
         padding-top: 150%;
         .trainingWithoutBg__info {
@@ -10,8 +12,22 @@
         .trainingWithoutBg__image {
             bottom: 0;
             transform: none;
-            height: 70%;
+            max-height: 70%;
             top: unset;
+        }
+        &:hover {
+            .trainingWithoutBg__image {
+                max-height: 75%;
+            }
+            &:before {
+                transform: scale(60);
+            }
+        }
+    }
+    &:hover {
+        .trainingWithoutBg__image {
+            transition-delay: .15s;
+            max-height: 55%;
         }
     }
     &__info {
@@ -34,8 +50,10 @@
         color: #51545f;
     }
     &__image{
+        transition: .25s;
         width: 100%;
-        height: 50%;
+        height: 100%;
+        max-height: 50%;
         position: absolute;
         top: 38%;
         left: 0;
@@ -43,6 +61,52 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center center;
-        
     }
+
+
+
+    /*Для анимации*/
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+    -webkit-transition: 1s ease-out;
+    transition: 1s ease-out;
+    &:hover {
+        -webkit-transition-delay: 0.1s;
+        transition-delay: 0.1s;
+        color: #574582;
+        z-index: 8;
+        background-color: #574582;
+        &:before {
+            transform: scale(30);
+        }
+        .trainingWithoutBg__topText, .trainingWithoutBg__name {
+            color: #fff;
+        }
+    }
+    &:before {
+        content: '';
+        transition: 0.5s;
+        z-index: -1;
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%) scale(1);
+        transform: translate(-50%, -50%) scale(1);
+        display: block;
+        width: 40px;
+        height: 40px;
+        background: #574582;
+        border-radius: 50px;
+    }
+    &._default {
+        &:hover {
+            color: #fff;
+            background-color: #574582;
+        }
+        &:before {
+            background: #574582;
+        }
+    }
+    /*Для анимации*/
 }
