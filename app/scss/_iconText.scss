@@ -16,6 +16,7 @@
         }
     }
     &._small {
+        align-items: flex-start;
         .iconText__text {
             font-size: .583rem;
             line-height: 1rem;

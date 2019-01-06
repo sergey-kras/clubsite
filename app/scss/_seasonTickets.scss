@@ -2,8 +2,14 @@
     width: 100%;
     &__item {
         background-color: #f5f5f5;
+        padding-top: 40px;
+        padding-bottom: 40px;
         &:nth-child(2n - 1) {
             background-color: #efebf4;
+        }
+        &._head {
+            padding-top: 20px;
+            padding-bottom: 20px;
         }
     }
 }
