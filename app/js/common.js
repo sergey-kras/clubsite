@@ -20,7 +20,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $(".chSlider1").owlCarousel({
-        items: 4,
+        items: 1,
         dots: false,
         loop: true,
         navContainer: '#customNav3',
@@ -31,7 +31,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $(".chSlider2").owlCarousel({
-        items: 4,
+        items: 1,
         dots: false, 
         loop: true,
         navContainer: '#customNav4',
@@ -42,7 +42,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $(".chSlider3").owlCarousel({
-        items: 4,
+        items: 1,
         dots: false, 
         loop: true,
         navContainer: '#customNav5',
