@@ -1,7 +1,15 @@
 .trainingWithBg {
-    padding-top: 75%; 
+    padding-top: 75%;
     position: relative;
-    &__overley{
+    background-repeat: no-repeat;
+    background-size: cover;
+    &:hover {
+        .trainingWithBg__overley {
+            opacity: 0;
+        }
+    }
+    &__overley {
+        transition: .25s;
         position: absolute;
         left: 0;
         top: 0;
