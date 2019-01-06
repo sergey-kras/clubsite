@@ -3,6 +3,12 @@
     justify-content: space-between;
     width: 100%;
     align-items: center;
+    &._notFirst {
+        .pageTitle__title {
+            margin-top: 35px;
+            margin-bottom: 20px; 
+        }
+    }
     &__text {
         font-size: 1.5rem;
         color: #5f498a;
@@ -11,8 +17,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 35px;
-        margin-bottom: 20px;
     }
     &__icon {
         width: 34px;
