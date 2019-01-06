@@ -42,7 +42,7 @@ $fields_sm: 15px;
 }
 
 @mixin wrapper(){
-    max-width: 1405px;
+    max-width: 1370px;
     margin: 0 auto;
     @include wrapper-full();
 }

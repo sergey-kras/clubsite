@@ -10,6 +10,7 @@
         display: flex;
         flex-wrap: wrap;
         position: relative;
+        justify-content: space-between;
         &._full {
             padding: 0;
             max-width: 100%;
@@ -21,7 +22,7 @@
         @include col();
     }
     &__1-2 {
-        @include size(6);
+        @include size(5.65);
         @include col();
     }
     &__1-3 {
@@ -33,16 +34,19 @@
         @include col();
     }
     &__title {
-        margin-bottom: 60px;
+        margin-bottom: 45px;
     }
     &__text {
         margin: 30px 0;
-        margin-top: 60px;
+        margin-top: 45px;
     }
     &._accent {
         background-color: #574582;
     }
     &._first {
         padding: 0;
+    }
+    &._form{
+        padding: 100px 0;
     }
 }

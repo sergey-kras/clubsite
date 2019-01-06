@@ -22,7 +22,7 @@
     }
     &__container {
         position: absolute;
-        top: 50%;
+        top: 56%;
         left: 50%;
         transform: translate(-50%, -50%);
         display: flex;
@@ -34,6 +34,8 @@
         font-size: 1.6rem;
         color: #fff;
         text-align: center;
+        font-weight: 400;
+        margin-bottom: 30px;
     }
     &__descrioption {
         margin-top: 0;
