@@ -1,13 +1,13 @@
 .trainingWithoutBg {
     width: 100%;
     position: relative;
-    padding-top: 75%;
+    padding-top: 78%;
     display: block;
     text-decoration: none;
     &._rectangle {
-        padding-top: 150%;
+        padding-top: 156%;
         .trainingWithoutBg__info {
-            top: 15%;
+            top: 8%;
         }
         .trainingWithoutBg__image {
             bottom: 0;
@@ -27,25 +27,25 @@
     &:hover {
         .trainingWithoutBg__image {
             transition-delay: .15s;
-            max-height: 55%;
+            max-height: 50%;
         }
     }
     &__info {
         position: absolute;
         left: 0;
-        bottom: 15%;
+        bottom: 11%;
         padding-left: 16%;
         width: 100%;
         box-sizing: border-box;
     }
     &__topText {
-        font-size: 1.083rem;
+        font-size: .725rem;
         font-weight: 100;
-        margin-bottom: 7.5px;
+        margin-bottom: 14.5px;
         color: #818295;
     }
     &__name {
-        font-size: 1.25rem;
+        font-size: 1.1rem;
         font-weight: 600;
         color: #51545f;
     }
@@ -53,9 +53,9 @@
         transition: .25s;
         width: 100%;
         height: 100%;
-        max-height: 50%;
+        max-height: 45%;
         position: absolute;
-        top: 38%;
+        top: 45%;
         left: 0;
         transform: translate(0, -50%);
         background-repeat: no-repeat;
