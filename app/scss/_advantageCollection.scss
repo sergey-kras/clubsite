@@ -5,6 +5,11 @@
     &__item {
         @include col();
         @include size(3);
-        margin-top: 30px;
+        margin-top: 35px;
+    }
+    &._threeInRow {
+        .advantageCollection__item {
+            @include size(4);
+        }
     }
 }
