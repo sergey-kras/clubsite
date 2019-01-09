@@ -6,6 +6,7 @@
         @include size(5);
         display: flex;
         align-items: flex-end;
+        padding-bottom: 50px;
         img {
             width: 100%;
         }
@@ -14,8 +15,9 @@
         @include col();
         @include size(5);
         @include resp(0, 1170){ @include size(6); }
+        @include size-md(7);
         padding: 30px 58px;
-        padding-bottom: 0px;
+        padding-bottom: 50px;
     }
     &__title {
         margin-top: 0;

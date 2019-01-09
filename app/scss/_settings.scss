@@ -6,7 +6,11 @@ $max) {
     }
 }
 
-$break_xl: 1170px;
+$sbreak_xl: 1170;
+$sbreak_lg: 960;
+$sbreak_md: 780;
+$sbreak_sm: 560;
+$sbreak_xs: 320;
 .container {
     @include wrapper();
 }
@@ -17,7 +21,7 @@ html {
        font-size: 22px;
     }
     @include resp(0,1170) {
-      font-size: 20px;
+      font-size: 19px;
    }
 }
 

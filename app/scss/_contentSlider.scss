@@ -20,9 +20,6 @@
         bottom: 0px;
         display: flex;
         justify-content: flex-end;
-        @include resp(0, 1170) {
-            bottom: 19px;
-        }
     }
     &__item {
         padding: 170px 0;

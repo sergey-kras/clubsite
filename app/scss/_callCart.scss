@@ -1,6 +1,7 @@
 .callCart {
     display: flex;
     text-decoration: none;
+    flex-wrap: wrap;
     &__image {
         transition: background-size .15s ease-out;
         width: 50%;
@@ -8,6 +9,10 @@
         background-size: 100%;
         background-position: center;
         height: 0;
+
+        @include resp(0, $sbreak_xl) {
+            width: 100%;
+        }
     }
     &__info {
         width: 50%;
@@ -21,6 +26,10 @@
         &._theme_trining {
             padding: 28px;
         }
+
+        @include resp(0, $sbreak_xl) {
+            width: 100%;
+        }
     }
     &__link {
         color: #5f498a;
@@ -29,10 +38,14 @@
     &__name {
         color: #51545f;
         font-size: 1.083rem;
+        @include resp(0, $sbreak_xl) {
+            margin: 15px 0;
+        }
     }
     &__contact {
         color: #51545f;
         font-size: .625rem;
+        margin-bottom: 7.5px;
     }
     &._link {
         &:hover {

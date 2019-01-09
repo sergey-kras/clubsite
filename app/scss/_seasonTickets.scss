@@ -4,12 +4,20 @@
         background-color: #f5f5f5;
         padding-top: 40px;
         padding-bottom: 40px;
+        @include resp(0, $sbreak_xl) {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
         &:nth-child(2n - 1) {
             background-color: #efebf4;
         }
         &._head {
             padding-top: 20px;
             padding-bottom: 20px;
+            @include resp(0, $sbreak_xl) {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
         }
     }
 }

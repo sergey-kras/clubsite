@@ -2,8 +2,14 @@
     position: relative;
     padding: 50px 0;
     flex-grow: 1;
+    @include resp(0, $sbreak_xl){
+        padding: 30px 0;
+    }
     &._forForm {
         padding: 100px 0;
+        @include resp(0, $sbreak_xl){
+            padding: 60px 0;
+        }
     }
     &__content {
         @include wrapper();
@@ -23,22 +29,32 @@
     }
     &__1-2 {
         @include size(5.65);
+        @include size-md(12);
         @include col();
     }
     &__1-3 {
         @include size(4);
+        @include size-md(6);
         @include col();
     }
     &__1-4 {
         @include size(3);
         @include col();
+        @include size-md(4);
     }
     &__title {
         margin-bottom: 45px;
+        @include resp(0, $sbreak_xl){
+            margin-bottom: 30px;
+        }
     }
     &__text {
         margin: 30px 0;
         margin-top: 45px;
+        @include resp(0, $sbreak_xl){
+            margin: 20px 0;
+            margin-top: 30px;
+        }
     }
     &._accent {
         background-color: #574582;
@@ -49,12 +65,21 @@
     &._top {
         padding: 0;
         padding-top: 20px;
+        @include resp(0, $sbreak_xl){
+           padding-top: 15px;
+        }
     }
     &._form{
         padding: 100px 0;
+        @include resp(0, $sbreak_xl){
+            padding: 60px 0;
+        }
     }
     &._bottom {
         padding: 0;
         padding-bottom: 120px;
+        @include resp(0, $sbreak_xl){
+            padding-bottom: 60px;
+        }
     }
 }

@@ -11,5 +11,8 @@
         font-size: .75rem;
         padding: 2.83rem 3.9583rem;
         margin: 0;
+        @include resp(0, $sbreak_xl){
+            padding: 1.83rem 1.9583rem;
+        }
     }
 }

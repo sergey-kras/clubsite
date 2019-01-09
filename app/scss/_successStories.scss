@@ -1,15 +1,14 @@
-.successStories{
+.successStories {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
     padding: 50px 0;
     justify-content: center;
-    &__item{
+    &__item {
         width: 50%;
         background-color: #f5f5f5;
         text-decoration: none;
-        min-width: 725px;
-        &:nth-child(3n+1){
+        &:nth-child(3n+1) {
             background-color: #eae4f0;
         }
     }

@@ -10,6 +10,11 @@
         background-size: cover;
         background-position: center center;
         position: relative;
+        @include resp(0, $sbreak_xl){
+            height: 100vh;
+            max-height: inherit;
+            min-height: 580px;
+        }
     }
     &__overley {
         position: absolute;
@@ -63,8 +68,5 @@
         display: flex;
         justify-content: flex-end;
         padding: 0;
-        @include resp(0, 1170) {
-            bottom: 19px;
-        }
     }
 }
