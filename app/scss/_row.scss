@@ -2,12 +2,15 @@
     position: relative;
     padding: 50px 0;
     flex-grow: 1;
-    @include resp(0, $sbreak_xl){
+    @include resp(0, $sbreak_xl) {
         padding: 30px 0;
+    }
+    @include resp(0, $sbreak_md) {
+        padding: 15px 0;
     }
     &._forForm {
         padding: 100px 0;
-        @include resp(0, $sbreak_xl){
+        @include resp(0, $sbreak_xl) {
             padding: 60px 0;
         }
     }
@@ -44,14 +47,14 @@
     }
     &__title {
         margin-bottom: 45px;
-        @include resp(0, $sbreak_xl){
+        @include resp(0, $sbreak_xl) {
             margin-bottom: 30px;
         }
     }
     &__text {
         margin: 30px 0;
         margin-top: 45px;
-        @include resp(0, $sbreak_xl){
+        @include resp(0, $sbreak_xl) {
             margin: 20px 0;
             margin-top: 30px;
         }
@@ -65,20 +68,20 @@
     &._top {
         padding: 0;
         padding-top: 20px;
-        @include resp(0, $sbreak_xl){
-           padding-top: 15px;
+        @include resp(0, $sbreak_xl) {
+            padding-top: 15px;
         }
     }
-    &._form{
+    &._form {
         padding: 100px 0;
-        @include resp(0, $sbreak_xl){
+        @include resp(0, $sbreak_xl) {
             padding: 60px 0;
         }
     }
     &._bottom {
         padding: 0;
         padding-bottom: 120px;
-        @include resp(0, $sbreak_xl){
+        @include resp(0, $sbreak_xl) {
             padding-bottom: 60px;
         }
     }

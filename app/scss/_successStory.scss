@@ -22,12 +22,18 @@
             padding: 30px;
             width: 100%;
         }
+        @include resp(0, $sbreak_md) {
+           padding-top: 0;
+        }
     }
     &__resultImage {
         width: 50%;
         height: 430px;
         background-size: cover;
         background-position: center;
+        @include resp(0, $sbreak_md) {
+            height: 250px;
+        }
     }
     &__bottom {
         width: 100%;

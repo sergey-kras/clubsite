@@ -10,9 +10,12 @@
     }
     &__info {
         padding: 50px 60px;
-        @include resp(0,1430) {
+        @include resp(0, 1430) {
             padding: 30px 35px;
-         }
+        }
+        @include resp(0, $sbreak_md) {
+            padding: 20px;
+        }
     }
     &__job {
         color: #818295;
@@ -28,7 +31,7 @@
             padding-top: 75%;
         }
     }
-    &__postText{
+    &__postText {
         font-size: .625rem;
         color: #51545f;
         margin-top: .8rem;

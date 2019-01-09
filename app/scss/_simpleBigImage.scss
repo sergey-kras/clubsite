@@ -19,4 +19,9 @@
         width: 100%;
         height: 100%;
     }
+    @include resp(0, $sbreak_xl){
+        height: 100vh;
+        max-height: inherit;
+        min-height: 580px;
+    }
 }

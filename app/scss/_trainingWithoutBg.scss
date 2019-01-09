@@ -61,6 +61,9 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center center;
+        @include resp(0, $sbreak_md){
+            top: 35%;
+        }
     }
 
 

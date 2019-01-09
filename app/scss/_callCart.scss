@@ -13,6 +13,9 @@
         @include resp(0, $sbreak_xl) {
             width: 100%;
         }
+        @include resp(0, $sbreak_md) {
+            padding-top: 25%;
+        }
     }
     &__info {
         width: 50%;

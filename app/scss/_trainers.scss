@@ -4,6 +4,9 @@
     width: 100%;
     justify-content: center;
     padding-top: 50px;
+    @include resp(0, $sbreak_md) {
+        padding-top: 12px;
+    }
     &__item {
         width: 25%;
         &._theme_trining {

@@ -27,6 +27,9 @@
         @include col();
         @include size(3);
         justify-content: center;
+        @include resp(0, $sbreak_md) {
+            text-align: center;
+        }
     }
     &__name{
         color: #999baf;
