@@ -6,6 +6,9 @@
     text-decoration: none;
     &._rectangle {
         padding-top: 156%;
+        @include resp(0, $sbreak_sm) {
+            padding-top: 100%;
+        } 
         .trainingWithoutBg__info {
             top: 8%;
         }
@@ -14,6 +17,9 @@
             transform: none;
             max-height: 70%;
             top: unset;
+            @include resp(0, $sbreak_sm) {
+                max-height: 80%;
+            } 
         }
         &:hover {
             .trainingWithoutBg__image {

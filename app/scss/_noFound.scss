@@ -1,6 +1,9 @@
 .noFound {
     @include row-flex();
     width: 100%;
+    @include resp(0, $sbreak_sm) {
+        margin: 0;
+    }
     &__image {
         @include col();
         @include size(5);
@@ -10,6 +13,11 @@
         img {
             width: 100%;
         }
+        @include resp(0, $sbreak_sm) {
+            order: 2;
+            width: 100%;
+            padding-bottom: 30px;
+        }
     }
     &__info {
         @include col();
@@ -18,14 +26,27 @@
         @include size-md(7);
         padding: 30px 58px;
         padding-bottom: 50px;
+        @include resp(0, $sbreak_sm) {
+            order: 1;
+            width: 100%;
+            text-align: center;
+            padding-bottom: 30px;
+        }
     }
     &__title {
         margin-top: 0;
         font-size: 1.25rem;
         color: #51545f;
+        @include resp(0, $sbreak_sm) {
+            margin-bottom: 7.5px;
+        }
     }
     &__text {
         margin-top: 30px;
         margin-bottom: 40px;
+        @include resp(0, $sbreak_sm) {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
     }
 }

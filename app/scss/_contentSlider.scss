@@ -26,5 +26,11 @@
         background-size: cover;
         background-position: center center;
         position: relative;
+        @include resp(0, $sbreak_md) {
+            padding: 90px 0;
+        }
+        @include resp(0, $sbreak_sm) {
+            padding: 45px 0;
+        }
     }
 }

@@ -6,6 +6,7 @@
         @include col();
         @include size(3);
         margin-top: 35px;
+        @include size-sm(6);
     }
     &._threeInRow {
         .advantageCollection__item {

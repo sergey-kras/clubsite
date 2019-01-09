@@ -3,18 +3,28 @@
     &__icon {
         width: 70px;
         height: 60px;
+        @include resp(0, $sbreak_sm) {
+           margin: 0 auto;
+        }
     }
     &__title {
         font-size: 1.08rem;
         font-weight: 600;
         color: inherit;
         margin-top: 1.6rem;
+        @include resp(0, $sbreak_sm) {
+            text-align: center;
+        }
     }
     &__text {
         color: inherit;
         font-size: .625rem;
         margin-top: 1.8rem;
         margin-bottom: 1rem;
+        @include resp(0, $sbreak_sm) {
+            text-align: center;
+            margin-top: .9rem;
+        }
     }
     &._big {
         .advantage__text {

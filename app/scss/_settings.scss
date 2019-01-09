@@ -10,7 +10,6 @@ $sbreak_xl: 1170;
 $sbreak_lg: 960;
 $sbreak_md: 780;
 $sbreak_sm: 560;
-$sbreak_xs: 320;
 .container {
     @include wrapper();
 }
@@ -28,6 +27,10 @@ html {
     @include resp(0,
     $sbreak_md) {
         font-size: 16px;
+    }
+    @include resp(0,
+    $sbreak_sm) {
+        font-size: 14px;
     }
 }
 

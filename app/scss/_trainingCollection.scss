@@ -4,5 +4,8 @@
     width: 100%;
     &__item{
         width: 33.33%;
+        @include resp(0, $sbreak_sm) {
+            width: 50%;
+        } 
     }
 }

@@ -15,5 +15,8 @@
                 background-color: #eae3f1;
             }
         }
+        @include resp(0, $sbreak_sm) {
+            width: 50%;
+        }
     }
 }
