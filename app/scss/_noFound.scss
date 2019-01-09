@@ -13,6 +13,7 @@
     &__info {
         @include col();
         @include size(5);
+        @include resp(0, 1170){ @include size(6); }
         padding: 30px 58px;
         padding-bottom: 0px;
     }

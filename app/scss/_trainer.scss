@@ -10,6 +10,9 @@
     }
     &__info {
         padding: 50px 60px;
+        @include resp(0,1430) {
+            padding: 30px 35px;
+         }
     }
     &__job {
         color: #818295;

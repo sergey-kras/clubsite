@@ -63,5 +63,8 @@
         display: flex;
         justify-content: flex-end;
         padding: 0;
+        @include resp(0, 1170) {
+            bottom: 19px;
+        }
     }
 }
