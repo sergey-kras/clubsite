@@ -28,10 +28,7 @@ html {
     $sbreak_md) {
         font-size: 16px;
     }
-    @include resp(0,
-    $sbreak_sm) {
-        font-size: 14px;
-    }
+   
 }
 
 body {

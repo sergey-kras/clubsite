@@ -15,4 +15,8 @@
             padding: 1.83rem 1.9583rem;
         }
     }
+    @include resp(0, $sbreak_sm) {
+        font-size: 15px;
+        line-height: 19px;
+    }
 }

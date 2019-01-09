@@ -15,11 +15,18 @@
         right: 50%;
         transform: translate(50%, -50%);
         @include wrapper();
-        padding: 0;
+        padding: 0 !important;
         width: 100%;
         bottom: 0px;
         display: flex;
         justify-content: flex-end;
+        @include resp(0, $sbreak_md) {
+            bottom: -15px;
+        } 
+        @include resp(0, $sbreak_sm) {
+            justify-content: center;
+            bottom: 15px;
+        }
     }
     &__item {
         padding: 170px 0;
@@ -31,6 +38,7 @@
         }
         @include resp(0, $sbreak_sm) {
             padding: 45px 0;
+            padding-bottom: 150px;
         }
     }
 }

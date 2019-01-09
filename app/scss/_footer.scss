@@ -15,6 +15,9 @@
         @include row-flex();
         width: 100%;
         flex-wrap: wrap;
+        @include resp(0, $sbreak_sm) {
+            display: none;
+        }
     }
     &__1-4 {
         @include size(3);
@@ -112,14 +115,17 @@
         }
     }
     &__social {
-        display: flex;
-        align-items: center;
         @include col();
         @include size(1.5);
         @include size-md(3);
+        display: flex;
+        align-items: center;
         justify-content: space-between;
         @include resp(0, $sbreak_md){ 
             margin-bottom: 15px;
+        }
+        @include resp(0, $sbreak_xl){ 
+            width: 15%;
         }
     }
     &__iconText {

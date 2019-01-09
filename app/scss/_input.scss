@@ -12,4 +12,8 @@
             color: #fff;
         }
     }
+    @include resp(0, $sbreak_sm) {
+        padding-bottom: 0;
+        padding-bottom: 4px;
+    }
 }

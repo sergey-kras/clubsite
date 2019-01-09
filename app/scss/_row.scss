@@ -29,21 +29,34 @@
     &__full {
         width: 100%;
         @include col();
+        @include resp(0, $sbreak_sm) {
+            margin: 0;
+        }
     }
     &__1-2 {
         @include size(5.65);
         @include size-md(12);
         @include col();
+        @include resp(0, $sbreak_sm) {
+            margin: 0;
+        }
     }
     &__1-3 {
         @include size(4);
         @include size-md(6);
+        @include size-sm(12);
         @include col();
+        @include resp(0, $sbreak_sm) {
+            margin: 0;
+        }
     }
     &__1-4 {
         @include size(3);
         @include col();
         @include size-md(4);
+        @include resp(0, $sbreak_sm) {
+            margin: 0;
+        }
     }
     &__title {
         margin-bottom: 45px;
@@ -76,6 +89,9 @@
         padding: 100px 0;
         @include resp(0, $sbreak_xl) {
             padding: 60px 0;
+        }
+        @include resp(0, $sbreak_sm) {
+            padding: 30px 0;
         }
     }
     &._bottom {

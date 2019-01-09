@@ -1,12 +1,18 @@
-.title{
+.title {
     font-size: 1.5rem;
     color: #51545f;
     font-weight: 600;
     margin-top: 0;
-    &._onColorfulBackground{
+    &._onColorfulBackground {
         color: #fff;
     }
     &._notMain {
         font-size: 1.25rem;
+    }
+    @include resp(0, $sbreak_sm) {
+        margin-bottom: 10px;
+        br {
+            display: none;
+        }
     }
 }

@@ -5,10 +5,16 @@
         &._onColorfulBackground {
             color: #a7a0ba;
         }
+        @include resp(0, $sbreak_sm) {
+            display: none;
+        }
     }
     &__title {
         text-align: center;
         margin-bottom: 50px;
+        @include resp(0, $sbreak_sm) {
+            margin-bottom: 30px;
+        }
     }
     &__subTitle {
         text-align: center;
@@ -21,15 +27,26 @@
     &__input {
         @include col();
         @include size(4);
+        @include size-sm(12);
+        @include resp(0, $sbreak_sm) {
+            margin-top: 15px;
+        }
     }
     &__textarea {
         @include col();
         margin-top: 50px;
         width: 100%;
+        @include resp(0, $sbreak_sm) {
+            margin-top: 15px;
+        }
     }
     &__button {
         @include col();
         margin-top: 70px;
         text-align: center;
+        @include resp(0, $sbreak_sm) {
+            margin-top: 30px;
+            width: 100%;
+        }
     }
 }
