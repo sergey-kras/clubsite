@@ -8,6 +8,9 @@
     }
     &._notMain {
         font-size: 1.25rem;
+        @include resp(0, $sbreak_sm) {
+            font-size: 20px;
+        }
     }
     @include resp(0, $sbreak_sm) {
         margin-bottom: 10px;

@@ -16,6 +16,9 @@
         @include resp(0, $sbreak_md) {
             padding: 20px;
         }
+        @include resp(0, $sbreak_sm) {
+            padding: 15px;
+        }
     }
     &__job {
         color: #818295;

@@ -14,6 +14,19 @@ $sbreak_sm: 560;
     @include wrapper();
 }
 
+._noneOnMobile {
+    @include resp(0,
+    $sbreak_sm) {
+        display: none !important;
+    }
+}
+._onlyOnMobile {
+    @include resp($sbreak_sm,
+    9999) {
+        display: none !important;
+    }
+}
+
 html {
     font-size: 24px;
     @include resp(0,

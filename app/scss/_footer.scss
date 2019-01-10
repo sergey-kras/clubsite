@@ -1,7 +1,7 @@
 .footer {
     width: 100%;
     position: relative;
-    &:after{
+    &:after {
         position: absolute;
         content: '';
         background-color: #c8c9d4;
@@ -40,12 +40,16 @@
         display: flex;
         flex-wrap: wrap;
         position: relative;
+        @include resp(0, $sbreak_sm) {
+           padding-bottom: 0;
+           padding-top: 50px;
+        }
     }
     &__colMenu {
         padding: 0;
         list-style-type: none;
         margin-bottom: 50px;
-        @include resp(0, $sbreak_md){ 
+        @include resp(0, $sbreak_md) {
             text-align: center;
             margin-bottom: 30px;
         }
@@ -86,18 +90,34 @@
         &._vk {
             width: 23px;
             height: 14px;
+            @include resp(0, $sbreak_sm) {
+                width: 36px;
+                height: 21px;
+            }
         }
         &._inst {
             width: 17px;
             height: 17px;
+            @include resp(0, $sbreak_sm) {
+                width: 22px;
+                height: 22px;
+            }
         }
         &._yout {
             width: 21px;
             height: 17px;
+            @include resp(0, $sbreak_sm) {
+                width: 32px;
+                height: 24px;
+            }
         }
         &._fb {
             width: 10px;
             height: 17px;
+            @include resp(0, $sbreak_sm) {
+                width: 13px;
+                height: 22px;
+            }
         }
         &:hover {
             margin-top: -3px;
@@ -110,8 +130,11 @@
         align-items: center;
         width: 100%;
         flex-wrap: wrap;
-        @include resp(0, $sbreak_md){ 
+        @include resp(0, $sbreak_md) {
             flex-direction: column;
+        }
+        @include resp(0, $sbreak_sm) {
+           margin: 0;
         }
     }
     &__social {
@@ -121,27 +144,52 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        @include resp(0, $sbreak_md){ 
+        @include resp(0, $sbreak_xl) {
+            width: 15%;
+        }
+        @include resp(0, $sbreak_md) {
             margin-bottom: 15px;
         }
-        @include resp(0, $sbreak_xl){ 
-            width: 15%;
+        @include resp(0, $sbreak_sm) {
+            order: 1;
+            width: 200px;
+            margin-bottom: 30px;
         }
     }
     &__iconText {
         @include col();
-        @include resp(0, $sbreak_md){ 
+        @include resp(0, $sbreak_md) {
             width: auto;
+        }
+        @include resp(0, $sbreak_sm) {
+            order: 2;
         }
     }
     &__tel {
         @include col();
         color: rgb(129, 130, 149);
         font-size: .583rem;
-        @include resp(0, $sbreak_md){ 
+        a {
+            text-decoration: none;
+            color: inherit;
+            @include resp(0, $sbreak_sm) {
+                font-size: 18px;
+                color: #574582;
+                text-decoration: underline;
+                display: block;
+                margin-top: 7.5px;
+                margin-bottom: 30px;
+            }
+        }
+        @include resp(0, $sbreak_md) {
             width: auto;
             text-align: center;
             margin-bottom: 15px;
+        }
+        @include resp(0, $sbreak_sm) {
+            font-size: 15px;
+            order: 3;
+            margin: 30px 0;
         }
     }
 }

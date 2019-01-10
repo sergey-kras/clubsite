@@ -18,6 +18,9 @@
                 padding-top: 10px;
                 padding-bottom: 10px;
             }
+            @include resp(0, $sbreak_sm) {
+                display: none;
+            }
         }
     }
 }

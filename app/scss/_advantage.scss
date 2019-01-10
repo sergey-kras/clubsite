@@ -37,12 +37,17 @@
         font-size: .625rem;
         margin-top: 1.8rem;
         margin-bottom: 1rem;
+        @include size-sm(9);
         @include resp(0, $sbreak_md) {
             text-align: center;
             margin-top: .9rem;
         }
-        @include resp(0, $sbreak_md) {
-            display: none;
+        @include resp(0, $sbreak_sm) {
+            text-align: left;
+            width: 70%;
+            br {
+                display: none;
+            }
         }
     }
     &._big {

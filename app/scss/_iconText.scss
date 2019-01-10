@@ -14,6 +14,9 @@
         &._onColorfulBackground {
             color: #fff;
         }
+        @include resp(0, $sbreak_sm){ 
+            font-size: 16px;
+        }
     }
     &._small {
         align-items: flex-start;

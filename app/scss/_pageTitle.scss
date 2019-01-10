@@ -12,6 +12,9 @@
     &__text {
         font-size: 1.5rem;
         color: #5f498a;
+        @include resp(0, $sbreak_sm) {
+            font-size: 24px;
+        }
     }
     &__title {
         display: flex;
@@ -23,5 +26,9 @@
         height: 34px;
         margin-right: 25px;
         margin-top: -5px;
+        @include resp(0, $sbreak_sm) {
+            margin-right: 10px;
+            min-width: 33px;
+        }
     }
 }

@@ -13,10 +13,16 @@
         img {
             width: 100%;
         }
-        @include resp(0, $sbreak_sm) {
+        @include resp(0, $sbreak_md) {
             order: 2;
             width: 100%;
             padding-bottom: 30px;
+        }
+        @include resp(0, $sbreak_sm) {
+           margin: 0 auto;
+           padding-bottom: 0;
+           width: 77px;
+           margin-bottom: -2px;
         }
     }
     &__info {
@@ -26,12 +32,18 @@
         @include size-md(7);
         padding: 30px 58px;
         padding-bottom: 50px;
-        @include resp(0, $sbreak_sm) {
+        @include resp(0, $sbreak_md) {
             order: 1;
             width: 100%;
             text-align: center;
             padding-bottom: 30px;
         }
+        @include resp(0, $sbreak_sm) {
+            padding: 0;
+            margin-bottom: 50px;
+            margin-top: 30px;
+            text-align: left;
+         }
     }
     &__title {
         margin-top: 0;
@@ -44,9 +56,12 @@
     &__text {
         margin-top: 30px;
         margin-bottom: 40px;
-        @include resp(0, $sbreak_sm) {
+        @include resp(0, $sbreak_md) {
             margin-top: 15px;
             margin-bottom: 15px;
+        }
+        @include resp(0, $sbreak_sm) {
+            margin-bottom: 80px;
         }
     }
 }

@@ -1,4 +1,7 @@
 .breadcrumbs {
+    @include resp(0, $sbreak_sm) {
+        display: none;
+     }
     &__item {
         color: #51545f;
         text-decoration: none;

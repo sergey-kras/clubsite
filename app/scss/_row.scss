@@ -39,6 +39,7 @@
         @include col();
         @include resp(0, $sbreak_sm) {
             margin: 0;
+            width: 100%;
         }
     }
     &__1-3 {
@@ -48,6 +49,7 @@
         @include col();
         @include resp(0, $sbreak_sm) {
             margin: 0;
+            width: 100%;
         }
     }
     &__1-4 {
@@ -56,12 +58,16 @@
         @include size-md(4);
         @include resp(0, $sbreak_sm) {
             margin: 0;
+            width: 100%;
         }
     }
     &__title {
         margin-bottom: 45px;
         @include resp(0, $sbreak_xl) {
             margin-bottom: 30px;
+        }
+        @include resp(0, $sbreak_sm) {
+            margin-bottom: 15px;
         }
     }
     &__text {

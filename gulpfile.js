@@ -55,10 +55,11 @@ gulp.task('libs', function() {
     return gulp.src([
         'app/js/jquery.min.js',
         'app/js/libs/*.js',
-        'app/js/common.js'
+        'app/js/common.js',
+        'app/js/addOptionsInSelect.js'
     ])
         .pipe(concat('scripts.min.js')) // Собираем их в кучу в новом файле libs.min.js
-        .pipe(uglify()) // Сжимаем JS файл
+      //  .pipe(uglify()) // Сжимаем JS файл
         .pipe(gulp.dest('./dist/js')) // Выгружаем в папку app/js
 });
 gulp.task('compress',['clean-img'], function() {
@@ -72,7 +73,7 @@ gulp.task('compress',['clean-img'], function() {
                     {removeViewBox: true},
                     {cleanupIDs: false}
                 ]
-            })
+            });
         ]))
         .pipe(gulp.dest('./dist/img/'))
 });

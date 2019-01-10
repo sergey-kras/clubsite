@@ -2,6 +2,10 @@
     display: flex;
     text-decoration: none;
     flex-wrap: wrap;
+    @include resp(0, $sbreak_sm) {
+        width: calc(100% + 30px);
+        margin-left: -15px;
+    }
     &__image {
         transition: background-size .15s ease-out;
         width: 50%;
@@ -9,12 +13,14 @@
         background-size: 100%;
         background-position: center;
         height: 0;
-
         @include resp(0, $sbreak_xl) {
             width: 100%;
         }
         @include resp(0, $sbreak_md) {
-            padding-top: 25%;
+            padding-top: 65%;
+        }
+        @include resp(0, $sbreak_sm) {
+            padding-top: 65%;
         }
     }
     &__info {
@@ -25,13 +31,17 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
         &._theme_trining {
             padding: 28px;
+            @include resp(0, $sbreak_sm) {
+                padding: 15px;
+            }
         }
-
         @include resp(0, $sbreak_xl) {
             width: 100%;
+        }
+        @include resp(0, $sbreak_sm) {
+            padding: 15px;
         }
     }
     &__link {

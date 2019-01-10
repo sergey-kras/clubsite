@@ -10,18 +10,32 @@
         @include size(5);
         display: flex;
         align-items: center;
+        @include resp(0, $sbreak_sm) {
+            margin: 0;
+            width: 100%;
+            justify-content: center;
+        }
     }
     &__info {
         @include col();
         @include size(7);
         color: #51545f;
         font-size: .75rem;
+        @include resp(0, $sbreak_sm) {
+            margin: 0;
+            width: 100%;
+        }
     }
     &__row {
         @include row-flex();
         align-items: center;
         margin-bottom: 15px;
         margin-top: 15px;
+        @include resp(0, $sbreak_sm) {
+           margin-right: 0;
+           margin-left: 0;
+           width: 100%;
+        }
     }
     &__col {
         @include col();
@@ -29,6 +43,10 @@
         justify-content: center;
         @include resp(0, $sbreak_md) {
             text-align: center;
+        }
+        @include resp(0, $sbreak_sm) {
+            margin: 0;
+            width: 100%;
         }
     }
     &__name{

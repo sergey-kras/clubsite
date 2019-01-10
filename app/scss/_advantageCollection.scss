@@ -7,17 +7,21 @@
         @include size(3);
         margin-top: 35px;
         @include size-md(6);
-        @include size-sm(12);
         @include resp(0, $sbreak_sm) {
             margin-right: 0;
             margin-left: 0;
             margin-top: 25px;
         }
+        @include resp(0, $sbreak_sm) {
+            width: 100%;
+        }
     }
     &._threeInRow {
         .advantageCollection__item {
             @include size(4);
-            @include size-sm(12);
+            @include resp(0, $sbreak_sm) {
+                width: 100%;
+            }
         }
     }
 }
