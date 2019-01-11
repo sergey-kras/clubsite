@@ -1,13 +1,24 @@
 .header{
     margin-bottom: 40px;
+    @include resp(0, $sbreak_md) {
+        background-color: #5a4b87;
+    }
+    @include resp($sbreak_sm, $sbreak_md) {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        z-index: 999;
+    }
     &__container{
         @include wrapper();
         max-height: 99px;
+        @include resp($sbreak_sm, $sbreak_md) {
+            padding: 20px 15px;
+            box-sizing: border-box;
+        }
     }
     &._onDarkBg{
         margin: 0;
     }
-    @include resp(0, $sbreak_sm) {
-        display: none;
-    } 
 }

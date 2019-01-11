@@ -2,6 +2,12 @@
     position: relative;
     z-index: 2;
     color: #51545f;
+    @include resp(0, $sbreak_md) {
+        color: #fff;
+    }
+    @include resp($sbreak_sm, $sbreak_md) {
+        height: 100vh;
+    }
     &._LayerOverlay{
         color: #fff;
         .topMenu__link {
@@ -17,6 +23,9 @@
         font-size: .625rem;
         line-height: .75rem;
         align-items: center;
+        @include resp(0, $sbreak_md) {
+            display: none;
+        }
     }
     &__left, &__right{
         @include col();
@@ -39,17 +48,35 @@
         justify-content: space-between;
         list-style-type: none;
         padding: 0;
+        @include resp(0, $sbreak_md) {
+            flex-direction: column;
+        }
     }
     &__item{
         @include col();
         display: inline-block;
         font-weight: 600;
         font-size: .7rem;
+        @include resp($sbreak_sm, $sbreak_md) {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        &._bottom {
+            position: absolute;
+            bottom: 25px;
+            @include resp($sbreak_md, 9999) {
+                display: none;
+            }
+        }
     }
     &__link{
         color: inherit;
         text-decoration: none;
         position: relative;
+        display: inline-block;
+        @include resp(0, $sbreak_md) {
+           padding: 10px;
+        }
         &:after {
             content: '';
             width: 100%;
@@ -60,6 +87,9 @@
             bottom: 0;
             transition: .3s;
             opacity: 1;
+            @include resp(0, $sbreak_md) {
+                display: none;
+            }
         }
         &:hover {
             color: #d61d44;
@@ -67,6 +97,10 @@
             &:after {
                 bottom: -5px;
                 opacity: 0;
+            }
+            @include resp(0, $sbreak_md) {
+                color: inherit;
+                background-color: #7a62a5;
             }
         }
     }

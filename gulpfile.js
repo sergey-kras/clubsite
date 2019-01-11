@@ -56,7 +56,9 @@ gulp.task('libs', function() {
         'app/js/jquery.min.js',
         'app/js/libs/*.js',
         'app/js/common.js',
-        'app/js/addOptionsInSelect.js'
+        'app/js/addOptionsInSelect.js',
+        'app/js/svgOptimize.js',
+        'app/js/menu.js'
     ])
         .pipe(concat('scripts.min.js')) // Собираем их в кучу в новом файле libs.min.js
       //  .pipe(uglify()) // Сжимаем JS файл

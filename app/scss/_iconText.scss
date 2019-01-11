@@ -14,7 +14,7 @@
         &._onColorfulBackground {
             color: #fff;
         }
-        @include resp(0, $sbreak_sm){ 
+        @include resp(0, $sbreak_sm) {
             font-size: 16px;
         }
     }
@@ -81,6 +81,24 @@
                     width: 100%;
                     transition: .6s;
                 }
+            }
+        }
+    }
+    &._menuLink {
+        .iconText__icon {
+            min-width: 20px;
+            max-width: 20px;
+            margin-right: 0;
+            @include resp($sbreak_md, 9999) {
+                display: none;
+            }
+        }
+        .iconText__text {
+            color: inherit;
+            text-decoration: none;
+            font-size: inherit;
+            @include resp(0, $sbreak_md) {
+                display: none;
             }
         }
     }
