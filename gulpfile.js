@@ -73,7 +73,7 @@ gulp.task('compress',['clean-img'], function() {
                     {removeViewBox: true},
                     {cleanupIDs: false}
                 ]
-            });
+            })
         ]))
         .pipe(gulp.dest('./dist/img/'))
 });
