@@ -97,8 +97,20 @@
             color: inherit;
             text-decoration: none;
             font-size: inherit;
+            transition: .5s;
             @include resp(0, $sbreak_md) {
                 display: none;
+                opacity: 0;
+                margin-left: -50px;
+            }
+        }
+        &._menu_open {
+            .iconText__text {
+                @include resp(0, $sbreak_md) {
+                    display: inline-block;
+                    margin-left: 22px;
+                    opacity:10;
+                }
             }
         }
     }

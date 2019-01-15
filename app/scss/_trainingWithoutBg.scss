@@ -6,7 +6,7 @@
     text-decoration: none;
     &._rectangle {
         padding-top: 156%;
-        @include resp(0, $sbreak_sm) {
+        @include resp(0, $sbreak_md) {
             padding-top: 100%;
         } 
         .trainingWithoutBg__info {

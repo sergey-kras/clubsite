@@ -76,6 +76,8 @@
         display: inline-block;
         @include resp(0, $sbreak_md) {
            padding: 10px;
+           box-sizing: border-box;
+           width: 100%;
         }
         &:after {
             content: '';

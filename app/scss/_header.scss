@@ -1,7 +1,17 @@
-.header{
+.header {
     margin-bottom: 40px;
     @include resp(0, $sbreak_md) {
-        background-color: #5a4b87;
+        // background-color: #5a4b87;
+        overflow: hidden;
+        &:before {
+            content: '';
+            left: 0;
+            top: 0;
+            width: 71px;
+            height: 100%;
+            position: absolute;
+            background-color: #5a4b87;
+        }
     }
     @include resp($sbreak_sm, $sbreak_md) {
         position: fixed;
@@ -10,15 +20,54 @@
         height: 100%;
         z-index: 999;
     }
-    &__container{
+    &__container {
         @include wrapper();
         max-height: 99px;
         @include resp($sbreak_sm, $sbreak_md) {
             padding: 20px 15px;
             box-sizing: border-box;
+            max-height: initial;
         }
     }
-    &._onDarkBg{
+    &._onDarkBg {
         margin: 0;
     }
+    &._menu_open {
+        transition: 2s ease-out;
+        @include resp($sbreak_sm, $sbreak_md) {
+            width: 250px;
+        }
+    }
+    /*Для анимции*/
+    @include resp(0, $sbreak_md) {
+        overflow: hidden;
+        z-index: 1;
+        position: relative;
+        transition: 2s ease-out;
+    }
+    &._menu_open {
+        transition-delay: 0.1s;
+        transition: 2s ease-out; // background-color: #5a4b87;
+        &:after {
+            transform: scale(30);
+        }
+    }
+    &:after {
+        content: '';
+        transition: 1s;
+        z-index: -1;
+        position: absolute;
+        top: 30px;
+        left: 21px;
+        transform: translate(-50%, -50%) scale(1);
+        display: block;
+        width: 100px;
+        height: 100px;
+        background: #5a4b87;
+        border-radius: 50px;
+        @include resp($sbreak_md, 9999) {
+            display: none;
+        }
+    }
+    /*Для анимции*/
 }
