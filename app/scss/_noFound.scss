@@ -51,6 +51,7 @@
         color: #51545f;
         @include resp(0, $sbreak_sm) {
             margin-bottom: 7.5px;
+            text-align: center;
         }
     }
     &__text {
@@ -62,6 +63,7 @@
         }
         @include resp(0, $sbreak_sm) {
             margin-bottom: 80px;
+            text-align: center;
         }
     }
 }

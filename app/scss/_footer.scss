@@ -15,22 +15,19 @@
         @include row-flex();
         width: 100%;
         flex-wrap: wrap;
-        @include resp(0, $sbreak_sm) {
-            display: none;
-        }
     }
     &__1-4 {
         @include size(3);
-        @include size-md(6);
+        @include size-md(12);
         @include col();
         &:last-child {
             text-align: right;
             @include size(2);
-            @include size-md(6);
+            @include size-md(12);
         }
         &:first-child {
             @include size(4);
-            @include size-md(6);
+            @include size-md(12);
         }
     }
     &__content {
@@ -49,9 +46,13 @@
         padding: 0;
         list-style-type: none;
         margin-bottom: 50px;
-        @include resp(0, $sbreak_md) {
+        @include resp(0, $sbreak_lg) {
             text-align: center;
             margin-bottom: 30px;
+        }
+        @include resp(0, $sbreak_md) {
+            margin-bottom: 15px;
+            margin-top: 0;
         }
     }
     &__link {
@@ -129,8 +130,7 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        flex-wrap: wrap;
-        @include resp(0, $sbreak_md) {
+        @include resp(0, $sbreak_lg) {
             flex-direction: column;
         }
         @include resp(0, $sbreak_sm) {
@@ -147,7 +147,7 @@
         @include resp(0, $sbreak_xl) {
             width: 15%;
         }
-        @include resp(0, $sbreak_md) {
+        @include resp(0, $sbreak_lg) {
             margin-bottom: 15px;
         }
         @include resp(0, $sbreak_sm) {
@@ -169,6 +169,7 @@
         @include col();
         color: rgb(129, 130, 149);
         font-size: .583rem;
+        line-height: 22px;
         a {
             text-decoration: none;
             color: inherit;
@@ -181,7 +182,7 @@
                 margin-bottom: 30px;
             }
         }
-        @include resp(0, $sbreak_md) {
+        @include resp(0, $sbreak_lg) {
             width: auto;
             text-align: center;
             margin-bottom: 15px;

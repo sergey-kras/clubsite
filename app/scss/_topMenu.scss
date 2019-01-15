@@ -1,4 +1,4 @@
-.topMenu{
+.topMenu {
     position: relative;
     z-index: 2;
     color: #51545f;
@@ -8,7 +8,7 @@
     @include resp($sbreak_sm, $sbreak_md) {
         height: 100vh;
     }
-    &._LayerOverlay{
+    &._LayerOverlay {
         color: #fff;
         .topMenu__link {
             &:after {
@@ -16,7 +16,7 @@
             }
         }
     }
-    &__info{
+    &__info {
         @include row-flex();
         justify-content: space-between;
         margin: 40px 0;
@@ -27,22 +27,23 @@
             display: none;
         }
     }
-    &__left, &__right{
+    &__left,
+    &__right {
         @include col();
         display: flex;
     }
-    &__left{
+    &__left {
         @include size(2);
     }
-    &__right{
+    &__right {
         @include size(10);
         justify-content: flex-end;
     }
-    &__contact{
+    &__contact {
         @include size(4);
         text-align: right;
     }
-    &__nav{
+    &__nav {
         @include row-flex();
         margin: 0;
         justify-content: space-between;
@@ -51,8 +52,12 @@
         @include resp(0, $sbreak_md) {
             flex-direction: column;
         }
+        @include resp($sbreak_md, 9999) {
+            justify-content: center;
+            margin-bottom: -15px;
+        }
     }
-    &__item{
+    &__item {
         @include col();
         display: inline-block;
         font-weight: 600;
@@ -60,6 +65,9 @@
         @include resp($sbreak_sm, $sbreak_md) {
             margin: 0;
             box-sizing: border-box;
+        }
+        @include resp($sbreak_md, 9999) {
+            margin-bottom: 15px;
         }
         &._bottom {
             position: absolute;
@@ -69,15 +77,15 @@
             }
         }
     }
-    &__link{
+    &__link {
         color: inherit;
         text-decoration: none;
         position: relative;
         display: inline-block;
         @include resp(0, $sbreak_md) {
-           padding: 10px;
-           box-sizing: border-box;
-           width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            width: 100%;
         }
         &:after {
             content: '';

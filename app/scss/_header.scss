@@ -1,5 +1,6 @@
 .header {
     margin-bottom: 40px;
+    position: relative;
     @include resp(0, $sbreak_md) {
         // background-color: #5a4b87;
         overflow: hidden;
@@ -41,8 +42,7 @@
     /*Для анимции*/
     @include resp(0, $sbreak_md) {
         overflow: hidden;
-        z-index: 1;
-        position: relative;
+        z-index: 999;
         transition: 2s ease-out;
     }
     &._menu_open {

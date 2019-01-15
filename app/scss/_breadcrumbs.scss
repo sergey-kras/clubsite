@@ -1,7 +1,4 @@
 .breadcrumbs {
-    @include resp(0, $sbreak_sm) {
-        display: none;
-     }
     &__item {
         color: #51545f;
         text-decoration: none;
@@ -19,6 +16,7 @@
             background-color: #e5264e;
         }
         &:first-child{
+            margin-left: 0;
             &:after{
                 display: none;
             }

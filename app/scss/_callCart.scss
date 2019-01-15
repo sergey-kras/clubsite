@@ -33,6 +33,9 @@
         justify-content: space-between;
         &._theme_trining {
             padding: 28px;
+            @include resp(0, $sbreak_md) {
+                padding-bottom: 40px;
+            }
             @include resp(0, $sbreak_sm) {
                 padding: 15px;
             }
@@ -42,6 +45,9 @@
         }
         @include resp(0, $sbreak_sm) {
             padding: 15px;
+        }
+        @include resp(0, $sbreak_md) {
+            padding-bottom: 40px;
         }
     }
     &__link {

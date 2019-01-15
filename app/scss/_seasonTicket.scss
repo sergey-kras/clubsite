@@ -9,11 +9,14 @@
         @include col();
         @include size(5);
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         @include resp(0, $sbreak_sm) {
             margin: 0;
             width: 100%;
             justify-content: center;
+        }
+        &._head {
+            align-items: center;
         }
     }
     &__info {

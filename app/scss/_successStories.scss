@@ -8,8 +8,13 @@
         width: 50%;
         background-color: #f5f5f5;
         text-decoration: none;
+        transition: .5s;
         &:nth-child(3n+1) {
             background-color: #eae4f0;
+        }
+        &:hover{
+            margin-top: -15px;
+            padding-bottom: 15px;
         }
     }
 }

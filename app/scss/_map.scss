@@ -20,10 +20,10 @@
         @include wrapper();
         width: 100%;
         position: absolute;
-        height: 100%;
+        height: 0px;
         transform: translate(-50%, 0);
         left: 50%;
-        top: 0;
+        top: 50%;
         box-sizing: border-box;
     }
     &__line {

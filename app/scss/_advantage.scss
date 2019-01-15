@@ -1,22 +1,14 @@
 .advantage {
     color: #51545f;
-    @include resp(0, $sbreak_sm) {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
     &__icon {
         width: 70px;
         height: 60px;
-        @include size-sm(4);
+   
         @include resp(0, $sbreak_md) {
            margin: 0 auto;
            height: 70px;
         }
-        @include resp(0, $sbreak_sm) {
-            height: auto;
-            margin: 0;
-         }
+     
     }
     &__title {
         font-size: 1.08rem;
@@ -26,28 +18,22 @@
         @include size-sm(9);
         @include resp(0, $sbreak_md) {
             text-align: center;
-        }
-        @include resp(0, $sbreak_sm) {
-            text-align: left;
-            margin-top: 0;
+            margin: 0 auto;
+            margin-top: 1.6rem;
+            width: 100%;
         }
     }
     &__text {
         color: inherit;
         font-size: .625rem;
-        margin-top: 1.8rem;
+        margin-top: .8rem;
         margin-bottom: 1rem;
+        line-height: 1rem;
         @include size-sm(9);
         @include resp(0, $sbreak_md) {
             text-align: center;
             margin-top: .9rem;
-        }
-        @include resp(0, $sbreak_sm) {
-            text-align: left;
-            width: 70%;
-            br {
-                display: none;
-            }
+            width: 100%;
         }
     }
     &._big {

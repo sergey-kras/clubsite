@@ -15,9 +15,11 @@
         }
         @include resp(0, $sbreak_md) {
             padding: 20px;
+            padding-bottom: 45px;
         }
         @include resp(0, $sbreak_sm) {
             padding: 15px;
+            padding-bottom: 40px;
         }
     }
     &__job {

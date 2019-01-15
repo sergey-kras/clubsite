@@ -1,6 +1,5 @@
 .successStory {
     display: flex;
-    transition: .5s;
     @include resp(0,1430) {
         flex-wrap: wrap;
     }
@@ -64,9 +63,5 @@
                 position: relative;
              }
         }
-    }
-    &:hover{
-        margin-top: -15px;
-        padding-bottom: 15px;
     }
 }

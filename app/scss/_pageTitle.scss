@@ -3,6 +3,9 @@
     justify-content: space-between;
     width: 100%;
     align-items: center;
+    @include resp(0, $sbreak_sm){
+        flex-wrap: wrap;
+    }
     &._notFirst {
         .pageTitle__title {
             margin-top: 35px;
@@ -14,6 +17,7 @@
         color: #5f498a;
         @include resp(0, $sbreak_sm) {
             font-size: 24px;
+            width: 100%;
         }
     }
     &__title {
@@ -29,6 +33,11 @@
         @include resp(0, $sbreak_sm) {
             margin-right: 10px;
             min-width: 33px;
+        }
+    }
+    &__breadcrumbs {
+        @include resp(0, $sbreak_sm) {
+            width: 100%;
         }
     }
 }
