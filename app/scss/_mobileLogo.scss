@@ -1,0 +1,15 @@
+.mobileLogo {
+    width: 100%;
+    text-align: center;
+    display: none;
+    align-items: flex-start;
+    justify-content: center;
+    &._menu_open {
+        display: flex;
+    }
+    @include resp(0, $sbreak_sm){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

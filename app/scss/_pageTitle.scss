@@ -3,7 +3,7 @@
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    @include resp(0, $sbreak_sm){
+    @include resp(0, $sbreak_md){
         flex-wrap: wrap;
     }
     &._notFirst {
@@ -36,7 +36,7 @@
         }
     }
     &__breadcrumbs {
-        @include resp(0, $sbreak_sm) {
+        @include resp(0, $sbreak_md) {
             width: 100%;
         }
     }

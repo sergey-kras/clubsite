@@ -92,6 +92,9 @@
             @include resp($sbreak_md, 9999) {
                 display: none;
             }
+            @include resp(0, $sbreak_sm) {
+                display: none;
+            }
         }
         .iconText__text {
             color: inherit;
@@ -102,6 +105,9 @@
                 display: none;
                 opacity: 0;
                 margin-left: -50px;
+            }
+            @include resp(0, $sbreak_sm) {
+                margin: 0 auto !important;
             }
         }
         &._menu_open {

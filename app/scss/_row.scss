@@ -8,6 +8,9 @@
     @include resp(0, $sbreak_md) {
         padding: 15px 0;
     }
+    @include resp($sbreak_sm, $sbreak_md) {
+        padding-left: 70px;
+    }
     &._forForm {
         padding: 100px 0;
         @include resp(0, $sbreak_xl) {
@@ -24,6 +27,9 @@
             padding: 0;
             max-width: 100%;
             margin: 0;
+        }
+        @include resp($sbreak_sm, $sbreak_md) {
+            padding: 0;
         }
     }
     &__full {
@@ -89,6 +95,9 @@
         padding-top: 20px;
         @include resp(0, $sbreak_xl) {
             padding-top: 15px;
+        }
+        @include resp($sbreak_sm, $sbreak_md) {
+            padding-left: 70px;
         }
     }
     &._form {

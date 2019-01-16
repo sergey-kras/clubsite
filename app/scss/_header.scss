@@ -1,6 +1,9 @@
 .header {
     margin-bottom: 40px;
     position: relative;
+    @include resp(0, $sbreak_sm) {
+       margin-bottom: 0;
+    }
     @include resp(0, $sbreak_md) {
         // background-color: #5a4b87;
         overflow: hidden;
@@ -14,6 +17,11 @@
             background-color: #5a4b87;
         }
     }
+    @include resp(0, $sbreak_md) {
+        &:before {
+            width: 100%;
+        }
+    }
     @include resp($sbreak_sm, $sbreak_md) {
         position: fixed;
         left: 0;
@@ -23,11 +31,13 @@
     }
     &__container {
         @include wrapper();
-        max-height: 99px;
         @include resp($sbreak_sm, $sbreak_md) {
             padding: 20px 15px;
             box-sizing: border-box;
             max-height: initial;
+        }
+        @include resp(0, $sbreak_sm) {
+            max-height: 66px;
         }
     }
     &._onDarkBg {
@@ -37,6 +47,11 @@
         transition: 2s ease-out;
         @include resp($sbreak_sm, $sbreak_md) {
             width: 250px;
+        }
+        @include resp(0, $sbreak_sm) {
+            .header__container {
+                max-height: inherit ;
+            }
         }
     }
     /*Для анимции*/

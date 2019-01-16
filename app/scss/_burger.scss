@@ -1,5 +1,5 @@
-.burger{
-    width: 41px;
+.burger {
+    min-width: 40px;
     height: 90px;
     margin-top: -30px;
     display: flex;
@@ -11,17 +11,27 @@
     @include resp($sbreak_md, 9999) {
         display: none;
     }
-    &._menu_open{
+    @include resp(0, $sbreak_sm) {
+        height:66px;
+        margin-top: 0;
+        &__bottom {
+            display: none;
+        }
+    }
+    &._menu_open {
         .burger__line {
-            &:nth-child(1){
+            &:nth-child(1) {
                 transform: rotate(45deg);
             }
-            &:nth-child(2){
+            &:nth-child(2) {
                 opacity: 0;
             }
-            &:nth-child(3){
+            &:nth-child(3) {
                 transform: rotate(-45deg);
                 margin-top: -14px;
+                @include resp(0, $sbreak_sm){
+                    margin-top: -12px;
+                }
             }
         }
         .burger__bottom {
@@ -35,7 +45,11 @@
         margin-bottom: 5px;
         transition: .3s;
         opacity: 1;
-    } 
+        @include resp(0, $sbreak_sm) {
+            margin-bottom: 2.5px;
+            margin-top: 2.5px;
+        }
+    }
     &__bottom {
         height: 1px;
         width: 25px;

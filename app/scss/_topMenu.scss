@@ -1,5 +1,6 @@
 .topMenu {
     position: relative;
+    width: 100%;
     z-index: 2;
     color: #51545f;
     @include resp(0, $sbreak_md) {
@@ -56,6 +57,9 @@
             justify-content: center;
             margin-bottom: -15px;
         }
+        @include resp (0, $sbreak_sm) {
+            padding-bottom: 15px;
+        }
     }
     &__item {
         @include col();
@@ -73,6 +77,9 @@
             position: absolute;
             bottom: 25px;
             @include resp($sbreak_md, 9999) {
+                display: none;
+            }
+            @include resp(0, $sbreak_sm) {
                 display: none;
             }
         }
@@ -112,6 +119,22 @@
                 color: inherit;
                 background-color: #7a62a5;
             }
+        }
+    }
+    &__burger {
+        display: flex;
+    }
+    &__callMe {
+        min-width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        img{
+            width: 22px;
+            margin-right: 7.5px;
+        }
+        @include resp($sbreak_sm, 9999){
+            display: none;
         }
     }
 }
