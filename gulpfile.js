@@ -28,7 +28,7 @@ gulp.task('smartgrid', function () {
                 width: '780px'
             },
             sm: {
-                width: '560px',
+                width: '640px',
                 fields: '15px' /* set fields only if you want to change container.fields */
             },
             xs: {
