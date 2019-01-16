@@ -15,5 +15,8 @@
     @include resp(0, $sbreak_sm) {
         padding-bottom: 0;
         padding-bottom: 4px;
+        font-size: 15px;
+        margin-top: 7.5px;
+        margin-bottom: 7.5px;
     }
 }

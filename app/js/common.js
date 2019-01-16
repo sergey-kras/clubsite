@@ -51,7 +51,21 @@ $(document).ready(function () {
         loop: true,
         navContainer: '#customNav3',
         navText: ['<img src="./img/whiteArrow.svg" alt="">', '<img src="./img/whiteArrow.svg" alt="">'],
-        navClass: ["arrowBlock__toLeft", "arrowBlock__toRight"]
+        navClass: ["arrowBlock__toLeft", "arrowBlock__toRight"],
+        responsive: {
+            0: {
+                items: 1
+            },
+            560: {
+                items: 2
+            },
+            780: {
+                items: 3
+            },
+            960: {
+                items: 4
+            }
+        },
     });
 });
 
@@ -63,7 +77,21 @@ $(document).ready(function () {
         loop: true,
         navContainer: '#customNav4',
         navText: ['<img src="./img/whiteArrow.svg" alt="">', '<img src="./img/whiteArrow.svg" alt="">'],
-        navClass: ["arrowBlock__toLeft", "arrowBlock__toRight"]
+        navClass: ["arrowBlock__toLeft", "arrowBlock__toRight"],
+        responsive: {
+            0: {
+                items: 1
+            },
+            560: {
+                items: 2
+            },
+            780: {
+                items: 3
+            },
+            960: {
+                items: 4
+            }
+        },
     });
 });
 
@@ -75,7 +103,21 @@ $(document).ready(function () {
         loop: true,
         navContainer: '#customNav5',
         navText: ['<img src="./img/whiteArrow.svg" alt="">', '<img src="./img/whiteArrow.svg" alt="">'],
-        navClass: ["arrowBlock__toLeft", "arrowBlock__toRight"]
+        navClass: ["arrowBlock__toLeft", "arrowBlock__toRight"],
+        responsive: {
+            0: {
+                items: 1
+            },
+            560: {
+                items: 2
+            },
+            780: {
+                items: 3
+            },
+            960: {
+                items: 4
+            }
+        },
     });
 });
 
