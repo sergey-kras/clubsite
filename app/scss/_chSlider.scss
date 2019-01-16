@@ -1,15 +1,18 @@
 .chSlider {
     position: relative;
-    &__item{
+    &__item {
         padding-top: 68%;
         background-size: cover;
         width: 100%;
     }
-    &__arrows{
+    &__arrows {
         position: absolute;
         bottom: 0;
         left: 50%;
         transform: translate(-50%, 0);
         z-index: 2;
+        @include resp($sbreak_sm, 9999) {
+            transform: translate(-50%, 50%);
+        }
     }
-} 
+}

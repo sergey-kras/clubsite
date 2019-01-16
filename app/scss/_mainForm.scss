@@ -1,5 +1,9 @@
 .mainForm {
     width: 100%;
+    @include resp($sbreak_sm, $sbreak_md) {
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
     &__subTitle {
         font-size: .75rem;
         &._onColorfulBackground {
@@ -23,6 +27,9 @@
     &__row {
         @include row-flex();
         justify-content: center;
+        @include resp($sbreak_sm, $sbreak_md) {
+            margin: 0;
+        }
     }
     &__input {
         @include col();

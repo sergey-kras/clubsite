@@ -108,6 +108,9 @@
         @include resp(0, $sbreak_sm) {
             padding: 30px 0;
         }
+        @include resp($sbreak_sm, $sbreak_md) {
+            padding-left: 70px;
+        }
     }
     &._bottom {
         padding: 0;

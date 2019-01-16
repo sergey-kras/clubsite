@@ -19,6 +19,9 @@
             margin: 0 auto;
             margin-bottom: 10px;
         }
+        @include resp($sbreak_sm, $sbreak_md) {
+            margin: 0;
+        }
     }
     &__1-4 {
         @include size(3);
@@ -44,6 +47,10 @@
         @include resp(0, $sbreak_sm) {
             padding-bottom: 0;
             padding-top: 50px;
+        }
+        @include resp($sbreak_sm, $sbreak_md) {
+            padding-left: 70px;
+            box-sizing: border-box;
         }
     }
     &__colMenu {
