@@ -53,6 +53,9 @@
     &__link {
         color: #5f498a;
         font-size: .625rem;
+        @include resp(0, $sbreak_sm){
+            font-size: 12px;
+        }
     }
     &__name {
         color: #51545f;
@@ -65,6 +68,9 @@
         color: #51545f;
         font-size: .625rem;
         margin-bottom: 7.5px;
+        @include resp(0, $sbreak_sm){
+            font-size: 12px;
+        }
     }
     &._link {
         &:hover {

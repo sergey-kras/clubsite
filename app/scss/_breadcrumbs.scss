@@ -5,6 +5,9 @@
         font-size: .541rem;
         margin-left: 28px;
         position: relative;
+        @include resp(0, $sbreak_sm){
+            font-size: 12px;
+        }
         &:after {
             content: '';
             position: absolute;

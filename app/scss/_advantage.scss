@@ -35,12 +35,18 @@
             margin-top: .9rem;
             width: 100%;
         }
+        @include resp(0, $sbreak_sm){
+            font-size: 13px;
+        }
     }
     &._big {
         .advantage__text {
             margin-top: 1rem;
             font-size: .75rem;
             line-height: 1rem; 
+            @include resp(0, $sbreak_sm){
+                font-size: 13px;
+            }
         }
     }
 }

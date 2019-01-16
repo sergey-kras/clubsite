@@ -26,6 +26,10 @@
         color: #818295;
         font-size: .625rem;
         margin-bottom: .8rem;
+        @include resp(0, $sbreak_sm){
+            font-size: 12px;
+            margin-left: 2px;
+        }
     }
     &__name {
         color: #51545f;

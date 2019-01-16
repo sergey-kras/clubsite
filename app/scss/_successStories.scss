@@ -9,6 +9,9 @@
         background-color: #f5f5f5;
         text-decoration: none;
         transition: .5s;
+        @include resp(0, $sbreak_sm){
+            width: 100%;
+        }
         &:nth-child(3n+1) {
             background-color: #eae4f0;
         }
