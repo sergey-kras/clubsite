@@ -44,6 +44,9 @@
         font-size: .625rem;
         color: #51545f;
         margin-top: .8rem;
+        @include resp(0, $sbreak_sm){
+            font-size: 12px;
+        }
     }
     &:hover {
         margin-top: -15px;
